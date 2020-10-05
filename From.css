@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');'
+
+body {
+    background-image: linear-gradient(rgba(0,255,0,0.2),rgba(0,0,0,0.2)), url(photo/banner.png);
+    background-position: center;
+    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f3f3f3;
+  overflow: hidden;
+    
+    
+}
+.container{
+    width: 360px;
+    height: 400px;
+    margin: 50% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,0.1);
+   
+   
+   
+}
+ .img-box {
+    position: absolute;
+    width: 100px;
+    top: 11%;
+    left: 50%;
+    
+    
+  
+   
+}
+ .img-box img{
+       width: 100%;
+     
+ }
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+    
+}
+.container form {
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.7s;
+}
+
+.container form input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #f1f1f1
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+ form button {
+     width: 110px;
+     height: 35px;
+     margin:0 10px;
+     background: linear-gradient(to right, #ff105f,#ffad06 );
+     outline: none;
+     border-radius:30px;
+     border: o;
+     color: #fff;
+     cursor: pointer;
+     
+    
+}
+#form2{
+    left: 450px;
+}#form3{
+    left: 450px;
+}
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    margin-top: 10px;
+    
+}
+#bar{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #ff105f,#ffad06 );
+    transition: 1.5s;
+    transition-delay: all 0.5s;
+    
+}
+#bar::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #ffad06;
+    
+}
+
+
+
+.container1 .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.container1 .card:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: #ff3d00;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+
+.container1 .card:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 15px;
+  height: 50%;
+  background: #ff3d00;
+  transform-origin: left;
+  transform: skewY(45deg);
+  transition: 0.5s;
+  border-bottom: 200px solid #e6e6e6;
+}
+
+.container1 .card:hover {
+  transform: translateY(-40px);
+}
+
+.container1 .card .imgBx {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #ff5f2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container1 .card .imgBx img {
+  max-width: 100px;
+}
+
+.container1 .card .imgBx h3 {
+  position: relative;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.container1 .card .content {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  color: #777;
+  background: #fff;
+  text-align: center;
+}
+
+.container1 .card .conten:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1));
+  transform-origin: bottom;
+  transform: skewx(45deg);
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container1 .card:before .content:before {
+  transform: translateY(40px) skewX(45deg);
+  filter: blur(5px);
+  opacity: 0.5;
+}
+
+.container1 .card:nth-child(1) {
+  z-index: 3;
+}
+
+.container1 .card:nth-child(1) {
+  z-index: 2;
+}
+.container1 .card:nth-child(1) {
+  z-index: 1;
+}
+.imgBx i {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: .5rem;
+}

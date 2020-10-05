@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!--  main CSS -->
+   <link rel="stylesheet" href="css/From.css">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   
+    
+        <title> from style</title>
+    </head>
+    <body>
+        <div class="container">
+                         <div id="img-box" class="img-box">
+                <img src="photo/banner.png" alt="" /> 
+         </div>
+         
+         <form id="form1" class="" action="" method="get" accept-charset="utf-8">
+
+                <h1>create account</h1>
+     <input type="text" placeholder="Enter your Name" />
+     <input type="password" placeholder="password" />
+         <input type="password" placeholder="repassword" />
+       <div class="btn-box">
+         <button id="next1" type="button"  Required>next</button>
+        
+       </div>
+            </form>
+            
+               <form id="form2" class="" action="" method="get" accept-charset="utf-8">
+
+         
+                   
+                <h1>mobile number is</h1>
+     <input type="text" placeholder="Enter your Name" />
+     <input type="password" placeholder="password" />
+         <input type="password" placeholder="repassword" />
+       <div class="btn-box">
+         <button id="back1" type="button" Required>back</button>
+          <button id="next2" type="button" c Required>next</button>
+       </div>
+            </form>
+               <form  id="form3">
+
+         
+                <h1>link description</h1>
+     <input type="text" placeholder="Enter your Name" />
+     <input type="password" placeholder="password" />
+         <input type="password" placeholder="repassword" />
+       <div class="btn-box">
+      <button id="back2" type="button"  Required>back</button>
+       <button id="submit" type="submit" Required>submit</button>
+
+       </div>
+            </form>
+            <div class="step-row">
+                <div id="bar">
+                    
+                </div>
+                <div class="step-col">
+                   <small>step1</small> 
+                </div>
+              <div class="step-col">
+                   <small>step2</small> 
+                </div>
+                 <div class="step-col">
+                   <small>step3</small> 
+                </div>
+            </div>
+            
+        </div>
+
+<button class="btn btn-primary" type="submit">submit</button>
+        
+        
+ <script type="text/javascript" charset="utf-8">
+     
+     
+ var form1 = document.getElementById("form1");
+ var form2 = document.getElementById("form2");
+ var form3 = document.getElementById("form3");
+
+var next1 = document.getElementById("next1");
+var next2 = document.getElementById("next2");
+var next3 = document.getElementById("next3");
+
+
+
+var bar = document.getElementById("bar");
+
+
+     next1.onclick = function(){
+         form1.style.left ="-450px";
+         form2.style.left ="40px";
+         bar.style.width ="240px";
+        form1.style.transform ="rotate(360deg)";
+   
+   
+     back1.onclick = function(){
+         form1.style.left ="40px";
+         form2.style.left ="450px";
+         bar.style.width ="120px";
+         form1.style.transform ="rotate(0deg)";
+         
+     }
+     next2.onclick = function(){
+         form2.style.left ="-450px";
+         form3.style.left ="40px";
+         bar.style.width ="360px";
+         form2.style.transform ="rotate(19deg)";
+         
+     }
+     
+    back2.onclick = function(){
+         form2.style.left ="40px";
+         form3.style.left ="450px";
+         bar.style.width ="240px";
+         form2.style.transform ="rotate(0deg)";
+     } 
+     
+ </script>
+ 
+    </body>
+</html>
